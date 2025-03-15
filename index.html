@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Elite University</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="bg-gray-100">
+
+    <!-- Navbar -->
+    <nav class="bg-white shadow-md fixed w-full z-10">
+        <div class="container mx-auto flex justify-between items-center p-4">
+            <h1 class="text-2xl font-bold text-blue-700">Elite University</h1>
+            <ul class="hidden md:flex space-x-6">
+                <li><a href="#about" class="nav-link">About</a></li>
+                <li><a href="#courses" class="nav-link">Courses</a></li>
+                <li><a href="#faculty" class="nav-link">Faculty</a></li>
+                <li><a href="#contact" class="nav-link">Contact</a></li>
+                <li><button id="applyBtn" class="bg-blue-700 text-white px-4 py-2 rounded">Apply Now</button></li>
+            </ul>
+        </div>
+    </nav>
+
+    <!-- Hero Section -->
+    <section class="bg-cover bg-center h-screen flex items-center justify-center text-white text-center" style="background-image: url('assets/campus.jpg');">
+        <div class="bg-black bg-opacity-50 p-8 rounded">
+            <h2 class="text-5xl font-bold">Welcome to Elite University</h2>
+            <p class="text-lg mt-4">Shaping the future with excellence in education.</p>
+            <button id="learnMore" class="mt-6 px-6 py-3 bg-blue-700 rounded">Learn More</button>
+        </div>
+    </section>
+
+    <!-- About Section -->
+    <section id="about" class="py-20 bg-white text-center">
+        <h2 class="text-3xl font-bold">About Us</h2>
+        <p class="mt-4 text-gray-600">Elite University is a world-renowned institution committed to academic excellence...</p>
+    </section>
+
+    <!-- Courses Section -->
+    <section id="courses" class="py-20 bg-gray-100 text-center">
+        <h2 class="text-3xl font-bold">Our Courses</h2>
+        <div class="mt-6 flex flex-wrap justify-center gap-6">
+            <div class="w-80 bg-white p-6 shadow-md rounded">
+                <h3 class="text-xl font-semibold">Computer Science</h3>
+                <p class="text-gray-600">Learn AI, ML, and more.</p>
+            </div>
+            <div class="w-80 bg-white p-6 shadow-md rounded">
+                <h3 class="text-xl font-semibold">Business Management</h3>
+                <p class="text-gray-600">Master business strategies.</p>
+            </div>
+            <div class="w-80 bg-white p-6 shadow-md rounded">
+                <h3 class="text-xl font-semibold">Engineering</h3>
+                <p class="text-gray-600">Hands-on learning with industry experts.</p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Faculty Section -->
+    <section id="faculty" class="py-20 bg-white text-center">
+        <h2 class="text-3xl font-bold">Meet Our Faculty</h2>
+        <p class="mt-4 text-gray-600">World-class professors from top universities.</p>
+    </section>
+
+    <!-- Contact Section -->
+    <section id="contact" class="py-20 bg-gray-100 text-center">
+        <h2 class="text-3xl font-bold">Contact Us</h2>
+        <p class="mt-4 text-gray-600">Email: admissions@eliteuniversity.com</p>
+    </section>
+
+    <!-- Apply Now Modal -->
+    <div id="applyModal" class="hidden fixed inset-0 bg-black bg-opacity-50 flex justify-center items-center">
+        <div class="bg-white p-6 rounded shadow-md w-96 text-center">
+            <h2 class="text-xl font-bold">Apply to Elite University</h2>
+            <p class="text-gray-600 mt-2">Fill out the application form.</p>
+            <button id="closeModal" class="mt-4 px-4 py-2 bg-red-500 text-white rounded">Close</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
