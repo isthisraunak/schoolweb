@@ -1,0 +1,13 @@
+html {
+    scroll-behavior: smooth;
+}
+
+.nav-link {
+    color: #1E40AF;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+
+.nav-link:hover {
+    color: #1E3A8A;
+}
